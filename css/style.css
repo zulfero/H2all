@@ -21,8 +21,10 @@ header {
   justify-content: space-between;
   align-items: center;
   z-index: 99;
+  border-bottom: 2px solid #162938;
+  background-color: #e8f4ff;
 }
-header .nav_bar a { 
+header .nav_bar a {
   position: relative;
   font-size: 1.1em;
   color: black;
@@ -46,20 +48,6 @@ header .nav_bar a::after {
 header .nav_bar a:hover::after {
   transform: scaleX(1);
 }
-header .log-in {
-  width: 100px;
-  height: 30px;
-  background: transparent;
-  border: 2px solid #fff;
-  outline: none;
-  cursor: pointer;
-  font-size: 1.1em;
-  color: black;
-  font-weight: 500;
-  margin-left: 40px;
-  border-radius: 6px;
-  transition: 1s;
-}
 header .log-in:hover {
   background: #fff;
   color: #162938;
@@ -79,8 +67,8 @@ header .log-in:hover {
   margin-top: 12em;
 }
 
-.form_box.active{
-height: 250px;
+.form_box .active {
+  height: 250px;
 }
 
 .box-login h2 {
@@ -160,4 +148,6 @@ height: 250px;
 }
 .login-link p a:hover {
   text-decoration: underline;
+}
+@media screen and (max-width: 450px) {
 }

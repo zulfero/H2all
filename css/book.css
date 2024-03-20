@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  margin: 0 auto;
+  width: 90%;
+}
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 2em 90px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 99;
+  background: #e8f4ff;
+  border-bottom: 2px solid #162938;
+}
+header .nav_bar a {
+  position: relative;
+  font-size: 1.1em;
+  color: black;
+  text-decoration: none;
+  font-weight: 500;
+  margin-left: 40px;
+}
+header .nav_bar a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 100px;
+  height: 3px;
+  background: #fff;
+  border-radius: 5px;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform.5s;
+}
+header .nav_bar a:hover::after {
+  transform: scaleX(1);
+}
+header .log-in:hover {
+  background: white;
+  color: #162938;
+}
+header .nav_bar a:hover {
+  color: aqua;
+}
+
+footer {
+  height: 20vh;
+  background-color:#162938;
+  margin-top: 10em;
+}
+.footer_links a {
+  text-decoration: none;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  font-size: 1.1em;
+  align-items: center;
+  justify-content: center;
+}
+.footer_links a:hover {
+  color: aqua;
+  text-decoration: underline;
+}
+.hero_cont--card1 {
+  display: flex;
+  margin-top: 7em;
+
+}
+
+.hero_cont--card1 {
+  position: relative;
+  height: 455px;
+  width: 300px;
+  background: transparent;
+  /* border-radius: 20%; */
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  /* backdrop-filter: blur(20px); */
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 12em;
+  flex-direction: column;
+}
+.hero_cont--card1 button {
+  padding: 1em 3em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  outline: none;
+  border-radius: 26%;
+  background-color: #162938;
+  color: white;
+  gap: 1em;
+  font-size: 1.1em;
+}
+.hero_cont{
+    display: flex;
+    background-color: red;
+    justify-content: space-between;
+    gap: 2em;
+}

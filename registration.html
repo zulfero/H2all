@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="css/registration.css" rel="stylesheet" />
+    <title>H2all</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header>
+      <img src="images/h.png" alt="H2all-logo" width="100" />
+      <nav class="nav_bar">
+        <a href="home.html">Home</a>
+        <div class="house">
+          <i class="fa-solid fa-house"></i>
+        </div>
+        <a href="registration.html">Registartion</a>
+        <a href="index.html">login</a>
+      </nav>
+    </header>
+    <div class="form_box">
+      <div class="box-login_Register">
+        <h2>Registartion</h2>
+        <p id="notification"></p>
+        <form action="#">
+          <div class="input-box registartion">
+            <input type="Email" name="email" required />
+            <label>Email</label>
+          </div>
+          <div class="input-box">
+            <input type="text" name="username" required />
+            <label>username</label>
+          </div>
+          <div class="input-box">
+            <input type="password" name="password" />
+            <label>password</label>
+          </div>
+          <div class="remember_forgot">
+            <label>
+              <input type="checkbox" name="terms" />
+              I agree to the terms and conditions</label
+            ><a href="#"></a>
+          </div>
+          <button type="submit" class="btn">Register</button>
+          <div class="login-register">
+            <p>
+              Already have an account?<a href="./index.html" class="login-link"
+                >Login</a
+              >
+            </p>
+          </div>
+        </form>
+      </div>
+    </div>
+    <script src="js/script.js"></script>
+  </body>
+</html>

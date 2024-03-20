@@ -21,6 +21,8 @@ header {
   justify-content: space-between;
   align-items: center;
   z-index: 99;
+  border-bottom: 2px solid #162938;
+  background-color: #e8f4ff;
 }
 header .nav_bar a {
   position: relative;
@@ -78,6 +80,7 @@ header .log-in:hover {
   align-items: center;
   margin-top: 12em;
 }
+
 
 .box-login h2 {
   font-size: 2em;
@@ -142,7 +145,7 @@ header .log-in:hover {
   color: #fff;
   font-weight: 500;
 }
-.login-register{
+.login-register {
   font-size: 0.9em;
   color: #162938;
   text-align: center;
