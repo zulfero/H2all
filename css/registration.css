@@ -8,7 +8,7 @@ body {
   display: flex;
   justify-content: center;
   height: 100vh;
-  background: url("../images/login.jpg") no-repeat center center/cover;
+  background: url("../images/registartion.jpg") no-repeat center center/cover;
 }
 
 header {
@@ -22,7 +22,7 @@ header {
   align-items: center;
   z-index: 99;
 }
-header .nav_bar a { 
+header .nav_bar a {
   position: relative;
   font-size: 1.1em;
   color: black;
@@ -77,10 +77,6 @@ header .log-in:hover {
   justify-content: center;
   align-items: center;
   margin-top: 12em;
-}
-
-.form_box.active{
-height: 250px;
 }
 
 .box-login h2 {
@@ -146,18 +142,18 @@ height: 250px;
   color: #fff;
   font-weight: 500;
 }
-.login-link {
+.login-register{
   font-size: 0.9em;
   color: #162938;
   text-align: center;
   font-weight: 500;
   margin: 25px 0 10px;
 }
-.login-link p a {
+.login-register p a {
   color: #162938;
   text-decoration: none;
   font-weight: 600;
 }
-.login-link p a:hover {
+.login-register p a:hover {
   text-decoration: underline;
 }
