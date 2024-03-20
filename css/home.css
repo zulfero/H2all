@@ -19,6 +19,7 @@ body {
   /* align-items: center; */
   flex-direction: column;
   position: relative;
+  
 }
 .hero_content--reason {
   display: flex;
@@ -29,7 +30,6 @@ body {
   color: black;
   flex: 1;
 }
-
 
 .hero_image {
   background: transparent;
@@ -61,6 +61,7 @@ header .nav_bar a {
 
 header .nav_bar a:hover {
   color: aqua;
+  
 }
 
 header .nav_bar a::after {
@@ -70,7 +71,7 @@ header .nav_bar a::after {
   bottom: -6px;
   width: 100px;
   height: 3px;
-  background: #fff;
+  background:#162938;
   border-radius: 5px;
   transform-origin: right;
   transform: scaleX(0);
@@ -83,7 +84,7 @@ header .log-in {
   width: 100px;
   height: 30px;
   background: transparent;
-  border: 2px solid #fff;
+  border: 2px solid #162938;
   outline: none;
   cursor: pointer;
   font-size: 1.1em;
@@ -130,6 +131,7 @@ header .log-in:hover {
 }
 .submit-btn a:hover {
   color: aqua;
+  text-decoration: underline;
 }
 
 footer {
@@ -151,10 +153,20 @@ footer {
   color: aqua;
   text-decoration: underline;
 }
-.footer__contacts--right li {
-  color: #fff;
+
+.footer_container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+
+.footer_container li{
+  color: white;
   list-style-type: none;
   display: flex;
+  gap: 1.4em;
+text-align: center;
 }
 @media screen and (max-width: 600px) {
 }

@@ -35,7 +35,7 @@ header .nav_bar a::after {
   bottom: -6px;
   width: 100px;
   height: 3px;
-  background: #fff;
+  background:#162938;
   border-radius: 5px;
   transform-origin: right;
   transform: scaleX(0);
@@ -54,7 +54,7 @@ header .nav_bar a:hover {
 
 footer {
   height: 20vh;
-  background-color:#162938;
+  background-color: #162938;
   margin-top: 10em;
 }
 .footer_links a {
@@ -73,7 +73,6 @@ footer {
 .hero_cont--card1 {
   display: flex;
   margin-top: 7em;
-
 }
 
 .hero_cont--card1 {
@@ -104,9 +103,45 @@ footer {
   gap: 1em;
   font-size: 1.1em;
 }
-.hero_cont{
-    display: flex;
-    background-color: red;
-    justify-content: space-between;
-    gap: 2em;
+.hero_cont {
+  display: flex;
+  justify-content: space-between;
+  gap: 2em;
+  flex-wrap: wrap;
 }
+
+
+footer {
+    height: 20vh;
+    background-color: black;
+    margin-top: 10em;
+  }
+  .footer_links a {
+    text-decoration: none;
+    color: white;
+    display: flex;
+    /* flex-direction: row;
+    font-size: 1.1em;
+    align-items: center;
+    justify-content: center; */
+    gap: 2em;
+  }
+  .footer_links a:hover {
+    color: aqua;
+    text-decoration: underline;
+  }
+  
+  .footer_container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+  }
+  
+  .footer_container li{
+    color: white;
+    list-style-type: none;
+    display: flex;
+    gap: 1.4em;
+  text-align: center;
+  }
