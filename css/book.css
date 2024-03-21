@@ -35,7 +35,7 @@ header .nav_bar a::after {
   bottom: -6px;
   width: 100px;
   height: 3px;
-  background:#162938;
+  background: #162938;
   border-radius: 5px;
   transform-origin: right;
   transform: scaleX(0);
@@ -50,6 +50,54 @@ header .log-in:hover {
 }
 header .nav_bar a:hover {
   color: aqua;
+}
+
+.pop_up {
+  background-color: #6078e6;
+  max-width: 380px;
+  width: 100%;
+  border-radius: 24px;
+  padding: 30px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  display: none;
+  z-index:1;
+}
+.pop_up::backdrop {
+  background-color: red;
+}
+
+.pop_up.active {
+  display: flex;
+}
+.pop_up i {
+  font-size: 70px;
+  color: #162938;
+}
+
+.pop_up h2 {
+  font-size: 25px;
+  font-weight: 600;
+  margin-top: 20px;
+  color: #162938;
+}
+.pop_up h3 {
+  font-size: 16px;
+  font-weight: 500;
+  color: #162938;
+}
+.pop_up button {
+  padding: 1.2em 4em;
+  font-size: 14px;
+  background-color: #162938;
+  color: white;
+  outline: none;
+  border-radius: 24px;
+  border: none;
+}
+.pop_up .close {
+  margin-top: 2em;
 }
 
 footer {
@@ -102,6 +150,10 @@ footer {
   color: white;
   gap: 1em;
   font-size: 1.1em;
+  cursor: pointer;
+}
+.hero_cont--card1 button:hover {
+  color: aqua;
 }
 .hero_cont {
   display: flex;
@@ -110,38 +162,36 @@ footer {
   flex-wrap: wrap;
 }
 
-
 footer {
-    height: 20vh;
-    background-color: black;
-    margin-top: 10em;
-  }
-  .footer_links a {
-    text-decoration: none;
-    color: white;
-    display: flex;
-    /* flex-direction: row;
-    font-size: 1.1em;
-    align-items: center;
-    justify-content: center; */
-    gap: 2em;
-  }
-  .footer_links a:hover {
-    color: aqua;
-    text-decoration: underline;
-  }
-  
-  .footer_container{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    
-  }
-  
-  .footer_container li{
-    color: white;
-    list-style-type: none;
-    display: flex;
-    gap: 1.4em;
-  text-align: center;
-  }
+  height: 20vh;
+  background-color: black;
+  margin-top: 10em;
+  overflow: hidden;
+}
+.footer_links a {
+  text-decoration: none;
+  color: white;
+  display: flex;
+  gap: 4em;
+}
+.footer_links a:hover {
+  color: aqua;
+  text-decoration: underline;
+}
+.footer_links {
+  display: flex;
+  justify-content: center;
+  gap: 2em;
+  font-size: 1.3em;
+}
+.footer__contacts--right {
+  display: flex;
+  color: white;
+  justify-content: center;
+  gap: 1.3em;
+}
+.footer__contacts--right li {
+  list-style-type: none;
+  display: flex;
+  margin-top: 2em;
+}

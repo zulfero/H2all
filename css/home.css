@@ -11,14 +11,12 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 2em;
-  
+  gap: 5em;
 }
 body {
   height: 20vh;
-  background: url("../images/") no-repeat center center/cover;
+  background: url("images/vector-realistic-water-background.jpg") no-repeat center center/cover;
 }
-
 
 .hero_image {
   background: transparent;
@@ -26,6 +24,7 @@ body {
   border: 2px solid rgba(255, 255, 255, 0.5);
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
 }
+
 header {
   position: fixed;
   top: 0;
@@ -49,7 +48,7 @@ header .nav_bar a {
 }
 
 header .nav_bar a:hover {
-  color: aqua;
+  color: blue;
 }
 
 header .nav_bar a::after {
@@ -126,23 +125,46 @@ footer {
   height: 20vh;
   background-color: black;
   margin-top: 10em;
-  
 }
 .footer_links a {
   text-decoration: none;
   color: white;
   display: flex;
-  
+  gap: 4em;
+  margin-top: 5em;
+  justify-content: center;
+  align-items: center;
 }
 .footer_links a:hover {
   color: aqua;
   text-decoration: underline;
 }
-
-.footer_container {
+.footer_links {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: center;
+  gap: 2em;
+  font-size: 1.3em;
+}
+.footer__contacts--right {
+  display: flex;
+  color: white;
+  justify-content: center;
+  gap: 1.3em;
+}
+.footer__contacts--right li {
+  list-style-type: none;
+  display: flex;
+  margin-top: 2em;
+}
+
+.footer_links a {
+  text-decoration: none;
+  color: white;
+  display: flex;
+}
+.footer_links a:hover {
+  color: aqua;
+  text-decoration: underline;
 }
 
 .footer_container li {

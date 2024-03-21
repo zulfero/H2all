@@ -26,21 +26,20 @@ const validateInputs = () => {
 
         user[`${input.name}`] = input.value;
       }
-      
     }
-    // window.location.href=('http://127.0.0.1:5501/home.html')
   });
 
-  // if (message.textContent === "") {
-  //   if (localStorage.getItem("users") === null) {
-  //     //create user
+  if (message.textContent === "") {
+    if (localStorage.getItem("users") === null) {
+      //create user
 
-  //     users.push(user);
-  //     localStorage.setItem("users", JSON.stringify(users));
-  //   } else {
-  //     users = JSON.parse(localStorage.getItem("users"));
-  //     users.push(user);
-  //     localStorage.setItem("users", JSON.stringify(users));
-  //   }
-  // }
+      users.push(user);
+      localStorage.setItem("users", JSON.stringify(users));
+    } else {
+      users = JSON.parse(localStorage.getItem("users"));
+      users.push(user);
+      localStorage.setItem("users", JSON.stringify(users));
+    }
+  }
+  window.location.href = "http://127.0.0.1:5501/home.html";
 };
