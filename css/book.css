@@ -48,11 +48,22 @@ header .log-in:hover {
   background: white;
   color: #162938;
 }
-header .nav_bar a:hover {
-  color: aqua;
+
+
+.popup-container{
+  position: fixed;
+  height: 100vh;
+  inset:0;
+  display: none;
+  justify-content: center;
+  align-items: center;
+background-color: rgba(0,0,0,.8);
+z-index:99;
+
 }
 
 .pop_up {
+  
   background-color: #6078e6;
   max-width: 380px;
   width: 100%;
@@ -61,12 +72,8 @@ header .nav_bar a:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
-  display: none;
-  z-index:1;
 }
-.pop_up::backdrop {
-  background-color: red;
-}
+
 
 .pop_up.active {
   display: flex;
@@ -83,7 +90,7 @@ header .nav_bar a:hover {
   color: #162938;
 }
 .pop_up h3 {
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 500;
   color: #162938;
 }

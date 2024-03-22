@@ -9,13 +9,15 @@
   margin: 0 auto;
   margin-top: 42em;
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   align-items: center;
-  gap: 5em;
+  gap: 9em;
+  
 }
 body {
   height: 20vh;
-  background: url("../images/vector-realistic-water-background.jpg") no-repeat center center/cover;
+  background: url("../images/drop-of-water-578897_1280.jpg") no-repeat
+    center center/cover;
 }
 
 .hero_image {
@@ -24,6 +26,9 @@ body {
   border: 2px solid rgba(255, 255, 255, 0.5);
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
 }
+
+
+
 
 header {
   position: fixed;
@@ -47,9 +52,7 @@ header .nav_bar a {
   margin-left: 40px;
 }
 
-header .nav_bar a:hover {
-  color: blue;
-}
+
 
 header .nav_bar a::after {
   content: "";
@@ -92,6 +95,10 @@ header .log-in:hover {
   flex-direction: column;
   position: relative;
   top: 17em;
+}
+.main_content h1 {
+  color:#162938;
+  font-size: 3em;
 }
 .submit-btn {
   display: flex;
@@ -173,6 +180,32 @@ footer {
   display: flex;
   gap: 1.4em;
   text-align: center;
+}
+.reason {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  margin-top: 500px;
+  margin-bottom: 500px;
+  gap: 5em;
+  margin-left: 3em;
+}
+.reason h1{
+  font-size:3em;
+}
+.reason p{
+  font-size: 2em;
+}
+.reason img{
+  background: transparent;
+  border-radius: 20%;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+}
+.reason__content{
+  display: flex;
+ flex-direction: column;
 }
 @media screen and (max-width: 600px) {
 }

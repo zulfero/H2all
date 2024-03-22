@@ -41,5 +41,5 @@ const validateInputs = () => {
       localStorage.setItem("users", JSON.stringify(users));
     }
   }
-  window.location.href = "http://127.0.0.1:5501/home.html";
+  window.location.href = `${window.location.origin}/home.html`;
 };
